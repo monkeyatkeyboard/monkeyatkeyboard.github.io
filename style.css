@@ -1,6 +1,12 @@
 textarea{
     resize: none;
-    
+    background-color: #404040;
+    color:hsl(195, 100%, 50%);
+    width: 100%;
+}
+
+::placeholder{
+    color:lightblue;
 }
 
 div.forms{
@@ -11,7 +17,7 @@ div.forms{
     box-sizing: border-box;
     border: 2px solid #ccc;
     border-radius: 2px;
-    background-color: #f8f8f8;
+    background-image: radial-gradient( circle farthest-corner at 22.4% 21.7%, rgba(4,189,228,1) 0%, rgba(2,83,185,1) 100.2% );
     font-size: 16px;
     resize: none;
 }
