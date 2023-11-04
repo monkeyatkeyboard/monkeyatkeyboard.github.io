@@ -3,6 +3,7 @@ textarea{
     background-color: #404040;
     color:#00FF41;
     width: 100%;
+    margin-top: 5%;
     font-family: 'Pixelify Sans', sans-serif;
     font-weight:normal;
     font-style:normal;
@@ -17,12 +18,30 @@ div.forms{
     text-align: center;
     width: 100%;
     height: 100%;
-    padding: 10% 10%;
+    padding: 5% 5%;
     box-sizing: border-box;
     /*border: 2px solid #ccc;*/
     border-radius: 2px;
     font-size: 16px;
     resize: none;
+}
+
+div input{
+    margin: 5% 5% 5% 5%;
+}
+
+div #pdfSub{
+    
+}
+
+form label{
+    background-color: #7f9ccb;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 1px ridge black;
+  font-size: 0.8rem;
+  height: 10px;
+  
 }
 
 body, html{
@@ -41,33 +60,23 @@ body, html{
 }
 
 .navbar{
-    background-color:#404040;
     overflow: hidden;
     display: flex;
-    margin-bottom: 5%;
 }
 
 .navbar a{
-    float: left;
     display: block;
     color: #f2f2f2;
+    font-family: 'Pixelify Sans', sans-serif;
+    font-weight:normal;
+    font-style:normal;
     text-align: center;
     padding: 20px 20px;
     text-decoration: none;
     font-size: 17px; 
 }
 
-#logo{
-    width:120px;
-    height:50px
-}
-
-.navbar .other{
-    padding-top: 3%;
-    padding-bottom: 3%;
-}
-
-.navbar .other:hover{
+.navbar a:hover{
     background-color: greenyellow;
     color: #003B00;
 }

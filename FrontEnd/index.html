@@ -12,29 +12,26 @@
     <body id = "back">
         <div id="myDiv">
         <div class = "navbar">
-            <a href = "index.html"><img id="logo" src = "Screenshot 2023-11-04 141457.png"></a>
-            <a class = "other" href = "about.html">About</a>
+            <a href = "index.html">monkeyatakeyboard</a>
+            <a href = "about.html">About</a>
+            <a href = "contact.html">Contact</a>
             
         </div>
 
         <div class = "forms">
             <form>
-            <textarea id="text-input" placeholder="Text" rows="10"></textarea>
-            <br>
-            <input id="submit-btn" type = "submit"> 
-            </form>
+                <label for="pdfSub">Choose PDF to upload (pdf)</label>
+                <input accept=".pdf"  type = "file" id = "pdfSub" name = "pdfSub" multiple hidden>
+                
+                <textarea id="text-input" placeholder="Text" rows="10"></textarea>
+
+                <input id="submit-btn" type = "submit"> 
+                </form>
         </div>
+        <img src = "Screenshot 2023-11-04 150741.png" id ="MONKEY">
         </div>
 
-        <script>
-            document.getElementById("myDiv").addEventListener("click", function(e){ alert("Hello World!"); });
-
-            function myFunction(e) {
-                let x = e.clientX;
-                let y = e.clientY;
-                let coor = "Coordinates: (" + x + "," + y + ")";
-                document.getElementById("hi").innerHTML = coor;
-            }
+        <script src = "scripts.js">
         </script>
 
     </body>
