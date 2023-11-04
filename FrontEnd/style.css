@@ -20,19 +20,30 @@ div.forms{
     padding: 10% 10%;
     box-sizing: border-box;
     /*border: 2px solid #ccc;*/
-    background-image: none;
     border-radius: 2px;
     font-size: 16px;
     resize: none;
 }
 
-#back{
-    background-image: radial-gradient( circle farthest-corner at 22.4% 21.7%, #003B00 0%,black 100.2% );
+body, html{
+    height:100%;
+    margin:0;
+}
+
+.background{
+    height: 100%;
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-y: hidden;
+    background-image: url("Space-Background-Image-2.jpg")/*radial-gradient( circle farthest-corner at 22.4% 21.7%, #003B00 0%,black 100.2% );
+*/
 }
 
 .navbar{
     background-color:#404040;
     overflow: hidden;
+    display: flex;
     margin-bottom: 5%;
 }
 
@@ -41,12 +52,25 @@ div.forms{
     display: block;
     color: #f2f2f2;
     text-align: center;
-    padding: 14px 16px;
+    padding: 20px 20px;
     text-decoration: none;
     font-size: 17px; 
 }
 
-.navbar a:hover{
+#logo{
+    width:130px;
+    height:50px
+}
+
+.navbar .other{
+    padding-top: 3%;
+}
+
+.navbar .other:hover{
     background-color: greenyellow;
+    color: #003B00;
+}
+#lo:hover{
+    background-color:none;
     color: #003B00;
 }
