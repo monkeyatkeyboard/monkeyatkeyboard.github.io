@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <script src="./scripts.js" defer></script>
         <link rel="stylesheet" href="style.css">
         <title>MonkeyAtKeyboardTyping</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -11,11 +10,11 @@
         <script defer src="https://pyscript.net/latest/pyscript.js"></script> -->
     </head>
     <body id = "back">
-        <div class="background">
+        <div id="myDiv">
         <div class = "navbar">
             <a href = "index.html"><img id="logo" src = "Screenshot 2023-11-04 141457.png"></a>
             <a class = "other" href = "about.html">About</a>
-
+            
         </div>
 
         <div class = "forms">
@@ -26,6 +25,17 @@
             </form>
         </div>
         </div>
+
+        <script>
+            document.getElementById("myDiv").addEventListener("click", function(e){ alert("Hello World!"); });
+
+            function myFunction(e) {
+                let x = e.clientX;
+                let y = e.clientY;
+                let coor = "Coordinates: (" + x + "," + y + ")";
+                document.getElementById("hi").innerHTML = coor;
+            }
+        </script>
 
     </body>
 </html>

@@ -30,7 +30,7 @@ body, html{
     margin:0;
 }
 
-.background{
+#myDiv{
     height: 100%;
     background-position:center;
     background-repeat: no-repeat;
@@ -58,12 +58,13 @@ body, html{
 }
 
 #logo{
-    width:130px;
+    width:120px;
     height:50px
 }
 
 .navbar .other{
     padding-top: 3%;
+    padding-bottom: 3%;
 }
 
 .navbar .other:hover{

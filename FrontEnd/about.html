@@ -1,19 +1,37 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <script src="./scripts.js" defer></script>
-        <link rel="stylesheet" href="style.css">
-        <title>MonkeyAtKeyboardTyping</title>
-        <!-- <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css"/>
-        <script defer src="https://pyscript.net/latest/pyscript.js"></script> -->
-    </head>
-    <body>
-        <div class = "navbar">
-            <a href = "index.html">Home</a>
-            <a href = "about.html">About</a>
-        </div>
+<style>
+div {
+  width: 200px;
+  height: 100px;
+  border: 1px solid black;
+}
+</style>
 
-        
+<body>
+<h1>HTML DOM Events</h1>
+<h2>The onmousemove Event</h2>
 
-    </body>
+<p>Use the addEventListener() method to attach a "mousemove" event to a div element.</p>
+
+<div id="myDIV"></div>
+
+<p>Mouse over the rectangle above, and get the coordinates of your mouse pointer.</p>
+
+<p id="demo"></p>
+
+<script>
+document.getElementById("myDIV").addEventListener("mousemove", function(event) {
+  myFunction(event);
+});
+
+function myFunction(e) {
+  let x = e.clientX;
+  let y = e.clientY;
+  let coor = "Coordinates: (" + x + "," + y + ")";
+  document.getElementById("demo").innerHTML = coor;
+}
+</script>
+
+</body>
 </html>
