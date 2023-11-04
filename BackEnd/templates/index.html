@@ -2,7 +2,7 @@
 <html>
     <head>
         <script src="./scripts.js" defer></script>
-        <link rel="stylesheet" href="style.css">
+        <link  href="{{ url_for('static', filename='styles/style.css')}}" rel="stylesheet" />
         <title>MonkeyAtKeyboardTyping</title>
         <!-- <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css"/>
         <script defer src="https://pyscript.net/latest/pyscript.js"></script> -->
@@ -14,12 +14,14 @@
         </div>
 
         <div class = "forms">
-            <form>
-            <textarea id="text-input" placeholder="Text" rows="10"></textarea>
+            <form action="/output">
+                <!-- <input type="text" name="text-input" id=""text-input/> -->
+            <textarea id="text-input" name="text-input" placeholder="Text" rows="10"></textarea>
             <br>
-            <input id="submit-btn" type = "submit"> 
+            <button id="submit-btn" type="submit">Submit</button>
             </form>
         </div>
+        <div class="output"></div>
 
     </body>
 </html>

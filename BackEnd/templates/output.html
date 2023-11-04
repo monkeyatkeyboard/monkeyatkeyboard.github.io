@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="./scripts.js" defer></script>
+        <link  href="{{ url_for('static', filename='styles/style.css')}}" rel="stylesheet" />
+        <title>MonkeyAtKeyboardTyping</title>
+        <!-- <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css"/>
+        <script defer src="https://pyscript.net/latest/pyscript.js"></script> -->
+    </head>
+    <body>
+        <div class = "navbar">
+            <a href = "index.html">Home</a>
+            <a href = "about.html">About</a>
+        </div>
+
+        <div class = "forms">
+            <form>
+            <textarea id="text-input" name="text-input" placeholder="Text" rows="10"></textarea>
+            <br>
+            <button id="submit-btn" type="submit">Submit</button>
+            </form>
+        </div>
+        <div class="output">{{ output }}</div>
+
+    </body>
+</html>
