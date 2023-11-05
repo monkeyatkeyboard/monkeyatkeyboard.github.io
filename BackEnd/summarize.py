@@ -1,3 +1,3 @@
 def doSummary(text):
     # text = ( text)
-    return (text + " | doSummary")
+    return ( text)

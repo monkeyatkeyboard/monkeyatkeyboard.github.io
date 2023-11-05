@@ -1,11 +1,9 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
     <head>
         <script src="./scripts.js" defer></script>
         <link  href="{{ url_for('static', filename='styles/style.css')}}" rel="stylesheet" />
         <title>MonkeyAtKeyboardTyping</title>
-        <!-- <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css"/>
-        <script defer src="https://pyscript.net/latest/pyscript.js"></script> -->
     </head>
     <body>
         <div class = "navbar">
@@ -21,6 +19,97 @@
             </form>
         </div>
         <div class="output">{{ output }}</div>
+
+    </body>
+</html> -->
+
+<!--  -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <link  href="{{ url_for('static', filename='styles/style.css')}}" rel="stylesheet" />
+        <title>MonkeyAtKeyboardTyping</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap" rel="stylesheet">
+
+        <!-- <script src = "scripts.js"></script>-->
+    <!-- <script>function closeDoor() {
+        document.getElementById("opening").style.width = "0%";
+    }</script> -->
+        
+    </head>
+    <body id = "back">
+        <!-- Overlay at start -->
+        <!-- <div id = "opening" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeDoor()">&times;</a>
+            <div class="typing">
+            <h1>Welcome to </h1>
+            <h1>monkeyatkeyboard</h1>
+            </div>
+          </div> -->
+
+        <section>
+            <div id="myDiv">
+                <div class = "sidenavbar">
+                    <a href = "#myDiv" id="home">monkeyatkeyboard</a>
+                    <a href = "#aboutPage" id="about">About</a>
+                    <a href = "#contactPage" id="contact">Contact</a>
+                    
+                </div>
+                <div class="content">
+                    <div class = "forms">
+                        <form action="/output">
+                            <label for="pdfSub">Choose PDF to upload (pdf)</label>
+                            <input accept=".pdf"  type = "file" id = "pdfSub" name = "pdfSub" multiple hidden>
+
+                            <textarea id="text-input" name="text-input" placeholder="Text" rows="20"></textarea>
+
+                            <button id="submit-btn" class="press" type="submit">Submit</button>
+                            </form>
+                    </div>
+                </div>
+
+                <div class="output"> {{ output }}</div>
+
+            </section>
+
+            <section class="sections1">
+                <div id = "aboutPage" class = "content">
+                    <h1>Project Entails</h1>
+                    <h2>Front End</h2>
+                    <p>
+                        We used HTML, CSS, a bit of Javascript to create our Front End Environment.
+                        Through this, we focused on creating a interactive interface and while
+                        showing a welcoming interface that uses animations and understanding of 
+                        formating and creative UI.
+                    </p>
+                    <h2>Back End</h2>
+                    <p>
+
+                    </p>
+
+                </div>
+            </section>
+
+            <footer class="content">
+                <div class="container">
+                    <div>
+                        <img class="monkey">
+                    </div>
+                    <div class = "part1">
+                        <h3>Brave Monkeys</h3>
+                        <ul>
+                            <li>Jason</li>
+                            <li>Jonathan</li>
+                            <li>Diego</li>
+                            <li>Victor</li>
+                        </ul>
+                    </div>
+                </div>
+            </footer>
+        </div>
 
     </body>
 </html>
