@@ -1,7 +1,11 @@
+## Will not be used 
+## Can be deeleted 
+
 def Summarize2(input_text): 
     #from __future__ import absolute_import
     #from __future__ import division, print_function, unicode_literals
 
+    # import sumy
     from sumy.parsers.html import HtmlParser
     from sumy.parsers.plaintext import PlaintextParser
     from sumy.nlp.tokenizers import Tokenizer

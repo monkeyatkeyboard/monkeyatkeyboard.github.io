@@ -12,6 +12,7 @@ def Extract(pdf):
     for page in pdfFileObj.pages:
         full_text += page.extract_text()
 
+    full_text = full_text.replace("\n", " ")
     return full_text
 
 if __name__ == "__main__":
