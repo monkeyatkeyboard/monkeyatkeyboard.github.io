@@ -20,6 +20,8 @@ def Summarize(text, percent):
         select_length = int(percent)
     elif(percent > 0):
         select_length = int(len(sentences) * percent)
+        if select_length == 0:
+            select_length = 1
     else:
         return "ERROR: Percent must be Positive!"
 

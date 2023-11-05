@@ -52,7 +52,7 @@ def Get_PDF_Summary(filename):
 ## Im going to assume this is going to be shorter?
 def Get_Text_Summary(text):
     print("Summarizing:")
-    summary = Summarize(text, 0.5) 
+    summary = Summarize(text, 0.2) 
 
     i = 0
     while i < len(summary):
