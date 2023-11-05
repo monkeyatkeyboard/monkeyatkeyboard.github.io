@@ -51,9 +51,15 @@ def Get_PDF_Summary(filename):
 ## If no PDF, call this function
 ## Im going to assume this is going to be shorter?
 def Get_Text_Summary(text):
-    # print("Summarizing:")
-    summary = Summarize(text, 0.2) 
+    import os
 
+    from pdf_extraction import Extract  # Referencing as Extract for now
+    from summarize import Summarize  # Referencing as Summarize for now
+    
+    # print("Summarizing:")
+    stripped_text = text.replace("\n", "")
+    summary = Summarize(text, 0.2) 
+    
     i = 0
     while i < len(summary):
         try:
@@ -86,7 +92,7 @@ def Get_Text_Summary(text):
 
 # Will run an example pdf if this file is run as main
 if __name__ == "__main__":
-    summary = Get_PDF_Summary("BackEnd/2005 Daw et al. natneuro.pdf")
+    summary = Get_Text_Summary("""Awooga""")
     print(summary)
 
 
