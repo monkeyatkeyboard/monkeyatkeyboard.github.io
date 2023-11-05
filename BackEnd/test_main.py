@@ -12,10 +12,10 @@ def Get_PDF_Summary(filename):
     abs_path = os.path.abspath(os.path.curdir)
     curr_file = abs_path + "/" + pdf
     
-    print("Extracting")
+    # print("Extracting")
     text = Extract(pdf)
 
-    print("Summarizing:")
+    # print("Summarizing:")
     summary = Summarize(text, 0.1) 
 
     i = 0
@@ -51,7 +51,7 @@ def Get_PDF_Summary(filename):
 ## If no PDF, call this function
 ## Im going to assume this is going to be shorter?
 def Get_Text_Summary(text):
-    print("Summarizing:")
+    # print("Summarizing:")
     summary = Summarize(text, 0.2) 
 
     i = 0
