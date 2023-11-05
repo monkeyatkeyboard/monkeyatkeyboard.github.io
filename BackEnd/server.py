@@ -1,5 +1,5 @@
 from flask import Flask, render_template, request, jsonify
-from summarize import doSummary
+from test_main import *
 from waitress import serve
 
 app = Flask(__name__)
@@ -17,7 +17,7 @@ def show_about():
 @app.route('/output')
 def get_output():
     text = request.args.get('text-input')
-    text = doSummary(text)
+    text = Get_Text_Summary(text)
     return render_template(
         "output.html",
         output=text

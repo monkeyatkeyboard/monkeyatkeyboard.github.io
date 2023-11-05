@@ -1,30 +1,3 @@
-<!-- <!DOCTYPE html>
-<html>
-    <head>
-        <script src="./scripts.js" defer></script>
-        <link  href="{{ url_for('static', filename='styles/style.css')}}" rel="stylesheet" />
-        <title>MonkeyAtKeyboardTyping</title>
-    </head>
-    <body>
-        <div class = "navbar">
-            <a href = "/index">Home</a>
-            <a href = "/about">About</a>
-        </div>
-
-        <div class = "forms">
-            <form>
-            <textarea id="text-input" name="text-input" placeholder="Text" rows="10"></textarea>
-            <br>
-            <button id="submit-btn" type="submit">Submit</button>
-            </form>
-        </div>
-        <div class="output">{{ output }}</div>
-
-    </body>
-</html> -->
-
-<!--  -->
-
 <!DOCTYPE html>
 <html>
     <head>
@@ -33,33 +6,20 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap" rel="stylesheet">
-
-        <!-- <script src = "scripts.js"></script>-->
-    <!-- <script>function closeDoor() {
-        document.getElementById("opening").style.width = "0%";
-    }</script> -->
         
     </head>
     <body id = "back">
-        <!-- Overlay at start -->
-        <!-- <div id = "opening" class="overlay">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeDoor()">&times;</a>
-            <div class="typing">
-            <h1>Welcome to </h1>
-            <h1>monkeyatkeyboard</h1>
-            </div>
-          </div> -->
-
-        <section>
+        
             <div id="myDiv">
                 <div class = "sidenavbar">
-                    <a href = "#myDiv" id="home">monkeyatkeyboard</a>
+                    <a href = "#FORMS" id="home">monkeyatkeyboard</a>
                     <a href = "#aboutPage" id="about">About</a>
-                    <a href = "#contactPage" id="contact">Contact</a>
                     
                 </div>
+
+                <section class="sections">
                 <div class="content">
-                    <div class = "forms">
+                    <div id = "FORMS" class = "forms">
                         <form action="/output">
                             <label for="pdfSub">Choose PDF to upload (pdf)</label>
                             <input accept=".pdf"  type = "file" id = "pdfSub" name = "pdfSub" multiple hidden>

@@ -5,7 +5,7 @@ textarea{
     background-color: #404040;
     color:#00FF41;
     width: 100%;
-    margin-top: 5%;
+    margin: 10% 10% 10% 10%;
     font-family: 'Pixelify Sans', sans-serif;
     font-weight:normal;
     font-style:normal;
@@ -305,14 +305,14 @@ body, html{
   }
 
   #aboutPage h1{
-    font-size: 40px;
+    font-size: 60px;
   }
   #aboutPage h2{
-    font-size: 30px;
+    font-size: 50px;
   }
 
   #aboutPage p{
-    font-size: 20px;
+    font-size: 30px;
   }
 
 
