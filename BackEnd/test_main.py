@@ -50,7 +50,7 @@ def Get_PDF_Summary(filename):
 
 ## If no PDF, call this function
 ## Im going to assume this is going to be shorter?
-def Get_Text_Summary:
+def Get_Text_Summary(text):
     print("Summarizing:")
     summary = Summarize(text, 0.5) 
 
