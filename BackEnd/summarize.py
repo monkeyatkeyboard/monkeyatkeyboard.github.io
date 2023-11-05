@@ -72,4 +72,4 @@ def Summarize(text):
 
     return summary
 
-Summarize(text)
+print(Summarize(text))
