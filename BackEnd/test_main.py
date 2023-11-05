@@ -6,9 +6,10 @@ from summarize import Summarize  # Referencing as Summarize for now
 def Get_PDF_Summary(filename):
     # pip install PyPDF2
 
-    pdf = filename
+    pdf = "uploads/"+filename
     abs_path = os.path.abspath(os.path.curdir)
-    curr_file = abs_path + "/" + pdf
+    curr_file = abs_path + "\\" + pdf
+    pdf = filename
     
     # print("Extracting")
     text = Extract(pdf)
